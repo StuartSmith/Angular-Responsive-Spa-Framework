@@ -26,3 +26,18 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Adding Bootstrap
+Run **npm install bootstrap** which will add bootstrap to the Package.json 
+Next add bootstrapt to the angular-cli.json
+
+
+"../node_modules/bootstrap/dist/css/bootstrap.css"
+
+so it looks like as follows ...
+"styles": [
+        "styles.css",
+        "../node_modules/bootstrap/dist/css/bootstrap.css"
+      ],
+      
+   
