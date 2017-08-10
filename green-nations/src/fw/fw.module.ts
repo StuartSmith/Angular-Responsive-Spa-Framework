@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FrameworkBodyComponent } from './framework-body/framework-body.component';
 import {  ContentComponent} from './content/Content.component';
 import {  TitleBarComponent} from './title-bar/title-bar.component';
+import {  FrameworkConfigService} from './services/Framework-Config.Service';
  
 @NgModule({
   imports: [
@@ -11,8 +12,12 @@ import {  TitleBarComponent} from './title-bar/title-bar.component';
   declarations: [
     FrameworkBodyComponent,
     ContentComponent,
-    TitleBarComponent
+    TitleBarComponent,
+    FrameworkConfigService
   ],
+  providers:[
+    FrameworkConfigService
+    ],
   exports:[
     FrameworkBodyComponent,
     ContentComponent,
