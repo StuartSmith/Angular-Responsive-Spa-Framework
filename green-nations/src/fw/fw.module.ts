@@ -4,6 +4,12 @@ import { FrameworkBodyComponent } from './framework-body/framework-body.componen
 import {  ContentComponent} from './content/Content.component';
 import {  TitleBarComponent} from './title-bar/title-bar.component';
 import {  FrameworkConfigService} from './services/Framework-Config.Service';
+import { ScreenService} from './services/screen.service';
+import { TopBarComponent} from './top-bar/top-bar.component';
+import { StatusBarComponent} from './status-bar/status-bar.component';
+import {  ScreenLarge} from './directives/screen-large-directive';
+import {  ScreenBelowLarge} from './directives/screen-below-large.directive';
+
  
 @NgModule({
   imports: [
@@ -13,10 +19,15 @@ import {  FrameworkConfigService} from './services/Framework-Config.Service';
     FrameworkBodyComponent,
     ContentComponent,
     TitleBarComponent,
-    FrameworkConfigService
+    TopBarComponent ,
+    StatusBarComponent ,
+    ScreenLarge,
+    ScreenBelowLarge
+     
   ],
   providers:[
-    FrameworkConfigService
+    FrameworkConfigService,
+    ScreenService
     ],
   exports:[
     FrameworkBodyComponent,

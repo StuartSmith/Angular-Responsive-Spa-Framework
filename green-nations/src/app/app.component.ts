@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FrameworkConfigService } from '../fw/services/framework-config.service';
+import { FrameworkConfigService, FrameworkConfigSettings } from '../fw/services/Framework-Config.Service';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +10,7 @@ export class AppComponent {
   constructor(private frameworkConfigService: FrameworkConfigService)
   {
 
-    let config:FrameworkConfigService = {
+    let config:FrameworkConfigSettings = {
       socialIcons:[
         {imageFile: 'assets/social-fb-bw.png', alt:'FaceBook', link:'http://www.facebook.com' },
         {imageFile: 'assets/social-google-bw.png', alt:'Google +', link:'http://www.google.com' },
@@ -22,7 +22,7 @@ export class AppComponent {
       showStatusBar:true,
       showStatusBarBreakpoint:800
 
-    }
+    }    
 
     frameworkConfigService.configure(config);
 
