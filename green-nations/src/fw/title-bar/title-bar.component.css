@@ -17,32 +17,22 @@
 
 .title-bar-small {
     flex-grow: 1;
-    display: flex;
-    min-height: 20px;
+    display: flex; 
 }
 
-.small-image-holder {
-    width: 100px;
-    height: 100px;
+.title-bar-flex-right{
+    margin-left: auto;
+}
+.small-image-holder{
+    margin-right: 0
 }
 
 .small-image {
-    height: 30px;
-    max-width: 10;
-}
-
-span {
-    margin-left: 10px;
-    margin-right: 20px;
-    font-size: 12px;
-    line-height: 30px;
-    
+    width: 100px;
+    height: auto;
 }
 
 .small-menu-glyph
-{
-    margin-left: 10px;
-    margin-right: 20px;
-    font-size: 12px;
-    line-height: 30px;
+{       
+    font-size: 20px;  
 }
