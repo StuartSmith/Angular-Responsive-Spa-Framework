@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { FrameworkConfigService, FrameworkConfigSettings } from '../fw/services/Framework-Config.Service';
+import {MenuService} from '../fw/services/menu.service';
+import{initialMenuItems} from './app.menu'
 
 @Component({
   selector: 'app-root',
@@ -7,7 +9,8 @@ import { FrameworkConfigService, FrameworkConfigSettings } from '../fw/services/
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  constructor(private frameworkConfigService: FrameworkConfigService)
+  constructor(private frameworkConfigService: FrameworkConfigService,
+              private menuService:MenuService)
   {
 
     let config:FrameworkConfigSettings = {
@@ -21,10 +24,9 @@ export class AppComponent {
       showUserControls:true,
       showStatusBar:true,
       showStatusBarBreakpoint:800
+        }    
 
-    }    
-
-    frameworkConfigService.configure(config);
-
+    frameworkConfigService.configure(config);   
+    menuService.items = initialMenuItems;
   }
 }
