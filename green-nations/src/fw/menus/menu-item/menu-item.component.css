@@ -7,9 +7,9 @@ host {
     padding: 0;
     font-size: 15px;
     line-height: 15px;
-    color: #666;
+    color: #FF00AD;
     cursor: pointer;
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
     width: 100%;
 }
 
@@ -41,10 +41,10 @@ span {
     margin-left: 8px;
 }
 
-.glyphicon-menu-left, .glyphicon-menu-right, .glyphicon-menu-down {
+/*.glyphicon-menu-left, .glyphicon-menu-right, .glyphicon-menu-down {
     float: right;
 }
-
+*/
 
 .menu-item {
     padding: 10px 10px 10px 0;
@@ -54,17 +54,30 @@ span {
     padding: 6px 6px 6px 0;
 }
 
+
+
 .menu-item:hover {
-    background-color: #dfd;
+    background-color: rgb(221, 255, 221);
+    /*background-color: #B0D7FF*/
+}
+
+.menu-item:focus {
+    background-color: rgb(170, 255, 170);
     /*background-color: #B0D7FF*/
 }
 
 .menu-item.vertical-menu:hover {
-    background-color: green;
+    background-color: green
 }
 
+.selected {
+    background-color: greenyellow;
+    
+  }
+
+
 .router-link-active {
-    background-color: #dfd;
+  /* background-color: green;*/
 }
 
 .router-link-active.vertical-menu {

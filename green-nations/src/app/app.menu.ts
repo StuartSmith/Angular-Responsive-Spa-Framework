@@ -16,7 +16,7 @@ export let initialMenuItems:Array<MenuItem> =[
     {
         text:'Settings',
         icon:'glyphicon-wrench',
-        route:'/countries',
+        route:'/settings',
         submenu:null
     }
    

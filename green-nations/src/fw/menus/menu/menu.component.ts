@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {MenuService} from "../../services/menu.service"
+import {MenuService, MenuItem } from "../../services/menu.service"
+
 
 @Component({
   selector: 'fw-menu',
@@ -8,10 +9,13 @@ import {MenuService} from "../../services/menu.service"
 })
 export class MenuComponent implements OnInit {
 
-  constructor(private menuService: MenuService ) { }
+  selectedMenu:MenuItem;
 
-  ngOnInit() {    
+  constructor(private menuService: MenuService ) { }  
   
+  ngOnInit() { }
+  
+  onSelect(menuItem: MenuItem): void {
+    this.selectedMenu = menuItem;
   }
-
 }

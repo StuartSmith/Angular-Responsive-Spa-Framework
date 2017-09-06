@@ -11,8 +11,7 @@ export class MenuItemComponent implements OnInit {
   @Input() item = <MenuItem>null;
   constructor(private menuService: MenuService) { }
 
-  ngOnInit() {
-    
+  ngOnInit() {  
    
   }
 

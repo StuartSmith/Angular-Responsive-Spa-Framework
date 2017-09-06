@@ -16,3 +16,8 @@ ul
 ul > li{
     display:inline-block;
 }
+
+.selected {
+    background-color: pink;
+    
+  }
