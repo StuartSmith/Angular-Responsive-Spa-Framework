@@ -14,12 +14,7 @@
 <div *screenLarge class="title-bar user-title-bar">
  <img src="assets/logo.png" alt="Green Nations Logo">
     <div class="menu-area">
-    
-    
-            <fw-top-bar></fw-top-bar>
-      
-            <fw-menu></fw-menu>
-      
-   
+            <fw-top-bar></fw-top-bar>      
+            <fw-menu *ngIf="!menuService.isVertical"></fw-menu>
     </div>
 </div>

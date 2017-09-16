@@ -1,4 +1,4 @@
-host {
+:host {
     display: inline-block;
     position: relative;
     margin-left: 0;
@@ -7,9 +7,9 @@ host {
     padding: 0;
     font-size: 15px;
     line-height: 15px;
-    color: #FF00AD;
+    color: #666;
     cursor: pointer;
-    /*box-sizing: border-box;*/
+    box-sizing: border-box;
     width: 100%;
 }
 
@@ -23,7 +23,8 @@ host {
     margin-left: 0;
     margin-top: 6px;
     margin-bottom: 6px;
-    color: white;
+    color:white;
+   
 }
 
 :host(.vertical-menu.in-popup) {
@@ -41,45 +42,35 @@ span {
     margin-left: 8px;
 }
 
-/*.glyphicon-menu-left, .glyphicon-menu-right, .glyphicon-menu-down {
-    float: right;
-}
-*/
-
 .menu-item {
     padding: 10px 10px 10px 0;
 }
 
 .menu-item.vertical-menu {
-    padding: 6px 6px 6px 0;
+    padding: 10px 6px 6px 0;
 }
-
-
 
 .menu-item:hover {
-    background-color: rgb(221, 255, 221);
-    /*background-color: #B0D7FF*/
-}
-
-.menu-item:focus {
-    background-color: rgb(170, 255, 170);
-    /*background-color: #B0D7FF*/
+    background-color: green;
+    color: white;
 }
 
 .menu-item.vertical-menu:hover {
-    background-color: green
+    min-width: 200px;
+    max-width: 200px;
+    
+    background-color: #008057;
 }
 
-.selected {
-    background-color: greenyellow;
-    
-  }
-
-
 .router-link-active {
-  /* background-color: green;*/
+    
+    background-color: green;
+    color: white;
 }
 
 .router-link-active.vertical-menu {
+    min-width: 200px;
+    max-width: 200px;
     background-color: green;
+   
 }

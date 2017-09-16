@@ -2,7 +2,11 @@
   <ul >
     <li *ngFor="let item of this.menuService.items"
     >
-      <fw-menu-item [item]="item" >
+      <fw-menu-item [item]="item" class ="vertical-menu"
+      [ngClass]="{'vertical-menu': menuService.isVertical}"
+      
+      >
+      <!--[ngClass]="{'vertical-menu': menuService.isVertical}"-->
       </fw-menu-item>
     </li>
   </ul>
